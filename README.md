@@ -14,6 +14,13 @@ Also install ngrok and have a Twilio account.
 
 ## Try It
 
+Start the sever:
+
+```sh
+cd server
+npm start
+```
+
 Start the client:
 
 ```sh
@@ -21,12 +28,7 @@ cd client
 npm start
 ```
 
-Start the sever:
-
-```sh
-cd server
-npm start
-```
+Make a connection to the phone number of your chioce:
 
 ```sh
 ./ngrok http 3001
@@ -36,4 +38,4 @@ npm start
 
 ## Contributors
 
-Katie Francis and Amy Kim
+Originally by Katie Francis and Amy Kim. Slack modifications by Amy Kim
