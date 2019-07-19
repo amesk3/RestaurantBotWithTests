@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/reservations", reservationsRouter);
+// app.use("/reservations", reservationsRouter);
 
 let resList = [];
 module.exports.resList = resList;
@@ -39,7 +39,9 @@ app.post("/slack", (req, res) => {
   parsedSlack["userName"] = user_name;
   resList.push(parsedSlack);
   console.log(resList);
-  res.send("Submitted");
+  res.send(
+    `${user_name}'s reservation for ${parsedSlack.date} has been submitted. `
+  );
 });
 
 app.post("/sms", (req, res) => {
