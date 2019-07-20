@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-// app.use("/reservations", reservationsRouter);
+app.use("/reservations", reservationsRouter);
 
 let resList = [];
 module.exports.resList = resList;
