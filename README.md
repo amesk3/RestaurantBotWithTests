@@ -1,4 +1,4 @@
-# Restaurant Bot using Twilio API
+# Restaurant Bot using Twilio & Slack API
 
 [![Build Status](https://travis-ci.org/amesk3/RestaurantBotWithTests.svg?branch=master)](https://travis-ci.org/amesk3/RestaurantBotWithTests)
 
